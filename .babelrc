@@ -1,0 +1,6 @@
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+
+// babel public babel-preset-env, includes es2017, es2016 ... loaded when needed
+//babel/preset-react support translate jsx, react es6 classes and etc
