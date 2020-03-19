@@ -1,6 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
-
 module.exports = {
     module: {
         rules:[
@@ -22,7 +21,11 @@ module.exports = {
             },
             {
                 test: /\.less$/,
-                loader: 'less-loader', // compiles Less to CSS
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                    { loader: 'less-loader' }
+                ]
             },
         ]
     },
